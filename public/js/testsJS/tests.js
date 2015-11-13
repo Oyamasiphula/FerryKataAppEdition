@@ -34,7 +34,7 @@ QUnit.test("testing class function Car", function(assert) {
 });
 
 QUnit.test("testing Ferry class (function)", function(assert) {
-    var BMW = new Ferry(5,11)
+var BMW = new Ferry(5,4)
         BMW.board()
         BMW.board()
         BMW.board()
@@ -42,12 +42,9 @@ QUnit.test("testing Ferry class (function)", function(assert) {
         BMW.board()
         BMW.board()
         BMW.board()
-        BMW.board()
-        BMW.board()
-        BMW.board()
-        BMW.board()
+      
 
-var VW = new Ferry(3,12)
+var VW = new Ferry(3,2)
         VW.board()
         VW.board()
         VW.board()
@@ -55,14 +52,11 @@ var VW = new Ferry(3,12)
         VW.board()
         VW.board()
         VW.board()
-        VW.board()
-        VW.board()
-        VW.board()
-        VW.board()
+       
 
         assert.equal(typeof Ferry, "function");
         assert.equal(BMW.numberOfCarsAllowed,5);
-        assert.equal(BMW.numberOfPeopleAllowed,11);
+        assert.equal(BMW.numberOfPeopleAllowed,4);
         assert.equal(VW.numberOfCarsAllowed,3);
-        assert.equal(VW.numberOfPeopleAllowed,12);
+        assert.equal(VW.numberOfPeopleAllowed,2);
 });
