@@ -38,3 +38,5 @@ function Ferry(numberOfCarsAllowed,numberOfPeopleAllowed){
 	
 	  	};
 	}
+
+module.exports.Car = Car;

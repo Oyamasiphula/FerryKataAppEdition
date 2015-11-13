@@ -1,4 +1,3 @@
-
 QUnit.test("testing class function Car", function(assert) {
 
     var BMW = new Car("Green",5);
