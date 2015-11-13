@@ -3,7 +3,6 @@ function Car(color, people){
 		this.people = people;
 };
 
-
 function Ferry(numberOfCarsAllowed,numberOfPeopleAllowed){
 	
 	var car_count = 0;
@@ -20,17 +19,18 @@ function Ferry(numberOfCarsAllowed,numberOfPeopleAllowed){
 			console.log("Boarding again")
 				return "Accepted";   
 	}
+		peopleCount++
+	 if (peopleCount <= this.numberOfPeopleAllowed) {
+		alert(peopleCount  =+ peopleCount );
+			console.log("Boarding again")
+				return "Accepted";   
+	}
+
 	else if(car_count >= this.numberOfCarsAllowed){
 		alert(" is Rejected");
 	    		return ("Rejected");
 			}
-			
-	 if (car_count <= this.numberOfPeopleAllowed) {
-		alert(car_count =+ car_count);
-			console.log("Boarding again")
-				return "Accepted";   
-	}
-	else if(car_count >= this.numberOfPeopleAllowed){
+	else if(peopleCount >= this.numberOfPeopleAllowed){
 		alert(" is Rejected");
 	    		return ("Rejected");
 			}
