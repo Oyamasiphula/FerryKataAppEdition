@@ -1,5 +1,5 @@
 var assert = require('assert'),
- 	Car = require('../activeJS/classEg').Car;
+ 	Car = require('../public/js/activeJS/classEg').Car;
  	 
 var BMW = new Car("Green",5);
 
