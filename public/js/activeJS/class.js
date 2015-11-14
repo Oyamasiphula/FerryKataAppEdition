@@ -15,19 +15,19 @@ function Ferry(numberOfCarsAllowed,numberOfPeopleAllowed){
     	car_count++;
 
 	if (car_count <= this.numberOfCarsAllowed) {
-		alert(car_count =+ car_count);
+		alert(car_count =+ car_count + " " +"Accepted");
 			console.log("Boarding again")
 				return "Accepted";   
 	}
 		peopleCount++
 	 if (peopleCount <= this.numberOfPeopleAllowed) {
-		alert(peopleCount  =+ peopleCount );
+		alert(parseInt(peopleCount  =+ peopleCount) + " " +"Accepted" );
 			console.log("Boarding again")
 				return "Accepted";   
 	}
 
 	else if(car_count >= this.numberOfCarsAllowed){
-		alert(" is Rejected");
+		alert(" is Rejected"+ " " +"Accepted");
 	    		return ("Rejected");
 			}
 	else if(peopleCount >= this.numberOfPeopleAllowed){
