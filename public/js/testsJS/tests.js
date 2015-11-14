@@ -1,5 +1,4 @@
 QUnit.test("testing class function Car", function(assert) {
-
     var BMW = new Car("Green",5);
 
         assert.equal(typeof Car, "function");
@@ -42,7 +41,6 @@ var BMW = new Ferry(5,4)
         BMW.board()
         BMW.board()
       
-
 var VW = new Ferry(3,2)
         VW.board()
         VW.board()
