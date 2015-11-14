@@ -2,5 +2,5 @@ language: node_js
 node_js:
   - "v4.2.2"
 before_script:
-  -npm install
-script: npm test
+  - npm install -g gulp
+script: gulp
